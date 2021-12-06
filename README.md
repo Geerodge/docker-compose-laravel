@@ -19,8 +19,7 @@ It's important to point out that because we're running programs inside a contain
 
 Follow the steps from the [src/README.md](src/README.md) file to get your Laravel project added in (or create a new blank one).
 
-Following the [instructions here](https://statamic.dev/installing/laravel) run `docker-compose run composer require statamic/cms --updat
-e-with-all-dependencies`.
+Following the [instructions here](https://statamic.dev/installing/laravel) run `docker-compose run composer require statamic/cms --update-with-all-dependencies`.
 
 ## Usage
 
