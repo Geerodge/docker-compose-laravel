@@ -1,11 +1,19 @@
 # docker-compose-laravel
-A pretty simplified Docker Compose workflow that sets up a LEMP network of containers for local Laravel development. You can view the full article that inspired this repo [here](https://dev.to/aschmelyun/the-beauty-of-docker-for-local-laravel-development-13c0).
+A pretty simplified Docker Compose workflow that sets up a LEMP network of containers for local Laravel development. [Forked from here](https://github.com/aschmelyun/docker-compose-laravel) and tweaked for Windows, thank you!
 
-[![GitNFT](https://img.shields.io/badge/%F0%9F%94%AE-Open%20in%20GitNFT-darkviolet?style=flat)](https://gitnft.quine.sh/app/commits/list/repo/docker-compose-laravel)
+## Prerequisites for Windows and Workflow
+
+I'm using this repo on a Windows environment, which makes for an interesting and slightly quirky workflow. You will need to be aware of and action the following:
+
+- [Install Docker](https://docs.docker.com/desktop/windows/install/) and activate the WSL 2 based engine
+- Install Ubuntu (via Microsoft Store) and I also recommend using [Windows Terminal](https://aka.ms/terminal) (it's pretty good!)
+- Activate Ubuntu in the Docker Settings > Resources > WSL Integration
+- Optionally create a syslink Projects folder in Ubuntu which you can also access from your Windows host machine. From your home directory in Ubuntu, something like `ln -s /mnt/c/Users/<username>/Documents/Projects Projects`. Via windows explorer use \\wsl$\ enter the virtual machine file system.
+- I'm using VS code opened from within Ubuntu via Windows Terminal using `code .` in your projects folder.
+
+If you need some help understanding more about WSL 2 and how it works, I recommend watching a few videos from [Beachcasts Programming Videos](https://www.youtube.com/channel/UCsOSGYawy8MG9Mh8NKgRHZQ).
 
 ## Usage
-
-To get started, make sure you have [Docker installed](https://docs.docker.com/docker-for-mac/install/) on your system, and then clone this repository.
 
 Next, navigate in your terminal to the directory you cloned this, and spin up the containers for the web server by running `docker-compose up -d --build site`.
 
