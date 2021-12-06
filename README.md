@@ -45,7 +45,7 @@ Three additional containers are included that handle Composer, NPM, and Artisan 
 - `docker-compose run --rm npm run dev`
 - `docker-compose run --rm artisan migrate`
 
-## Statamic Tweaks
+## Statamic Users
 
 Follow [these instructions](https://statamic.dev/tips/storing-laravel-users-in-files) to change users to be stored in files rather than databases.
 
