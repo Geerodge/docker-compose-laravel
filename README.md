@@ -13,11 +13,11 @@ I'm using this repo on a Windows environment, which makes for an interesting and
 
 If you need some help understanding more about WSL 2 and how it works, I recommend watching a few videos from [Beachcasts Programming Videos](https://www.youtube.com/channel/UCsOSGYawy8MG9Mh8NKgRHZQ).
 
-## Install Lavarel
+It's important to point out that because we're running programs inside a container we will need to prepend `docker-compose exec run` to our commands. Alternatively, you can run some things locally, for example composer or php.
+
+## Install Lavarel and Statamic
 
 Follow the steps from the [src/README.md](src/README.md) file to get your Laravel project added in (or create a new blank one).
-
-## Install Statamic
 
 Following the [instructions here](https://statamic.dev/installing/laravel) run `docker-compose run composer require statamic/cms --updat
 e-with-all-dependencies`.
