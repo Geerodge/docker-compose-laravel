@@ -19,7 +19,11 @@ It's important to point out that because we're running programs inside a contain
 
 Follow the steps from the [src/README.md](src/README.md) file to get your Laravel project added in (or create a new blank one).
 
-Following the [instructions here](https://statamic.dev/installing/laravel) run `docker-compose run composer require statamic/cms --update-with-all-dependencies`.
+Follow the [instructions here](https://statamic.dev/installing/laravel).
+
+- Run `php artisan config:clear` or to run this command inside the docker-container it would be `docker-compose exec php php artisan config:clear`
+- Add the `statamic:install` command to post-autoload-dump in composer.json.
+- Install Statamic with command `composer require statamic/cms --update-with-all-dependencies` or `docker-compose run composer require statamic/cms --update-with-all-dependencies`.
 
 ## Usage
 
