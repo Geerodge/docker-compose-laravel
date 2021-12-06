@@ -84,6 +84,8 @@ If you want to enable the hot-reloading that comes with Laravel Mix's BrowserSyn
 });
 ```
 
+You may also need to run `docker-compose run npm install laravel-mix@latest` to install mix correctly.
+
 From your terminal window at the project root, run the following command to start watching for changes with the npm container and its mapped ports:
 
 ```bash
