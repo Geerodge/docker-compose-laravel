@@ -1,4 +1,4 @@
-# docker-compose-laravel
+# docker-compose-laravel-statamic
 A pretty simplified Docker Compose workflow that sets up a LEMP network of containers for local Laravel development. [Forked from here](https://github.com/aschmelyun/docker-compose-laravel) and tweaked for Windows and my needs (namly, building a stable [Statamic](https://statamic.dev/) development environment) - thank you!
 
 ## Prerequisites for Windows and Workflow
@@ -12,6 +12,15 @@ I'm using this repo on a Windows environment, which makes for an interesting and
 - I'm using VS code opened from within Ubuntu via Windows Terminal using `code .` in your projects folder.
 
 If you need some help understanding more about WSL 2 and how it works, I recommend watching a few videos from [Beachcasts Programming Videos](https://www.youtube.com/channel/UCsOSGYawy8MG9Mh8NKgRHZQ).
+
+## Install Lavarel
+
+Follow the steps from the [src/README.md](src/README.md) file to get your Laravel project added in (or create a new blank one).
+
+## Install Statamic
+
+Following the [instructions here](https://statamic.dev/installing/laravel) run `docker-compose run composer require statamic/cms --updat
+e-with-all-dependencies`.
 
 ## Usage
 
