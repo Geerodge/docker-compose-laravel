@@ -1,5 +1,5 @@
 # docker-compose-laravel
-A pretty simplified Docker Compose workflow that sets up a LEMP network of containers for local Laravel development. [Forked from here](https://github.com/aschmelyun/docker-compose-laravel) and tweaked for Windows and my needs (namly, building a stable Statamic development environment) - thank you!
+A pretty simplified Docker Compose workflow that sets up a LEMP network of containers for local Laravel development. [Forked from here](https://github.com/aschmelyun/docker-compose-laravel) and tweaked for Windows and my needs (namly, building a stable [Statamic](https://statamic.dev/) development environment) - thank you!
 
 ## Prerequisites for Windows and Workflow
 
