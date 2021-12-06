@@ -45,6 +45,12 @@ Three additional containers are included that handle Composer, NPM, and Artisan 
 - `docker-compose run --rm npm run dev`
 - `docker-compose run --rm artisan migrate`
 
+## Statamic Tweaks
+
+Follow [these instructions](https://statamic.dev/tips/storing-laravel-users-in-files) to change users to be stored in files rather than databases.
+
+Then use the command `php please make:user` or `docker-compose exec php php please make:user`.
+
 ## Permissions Issues
 
 If you encounter any issues with filesystem permissions while visiting your application or running a container command, try completing one of the sets of steps below.
