@@ -6,3 +6,5 @@ To get started, **delete this file** and then do one of the following:
 - Spin up the Docker network by following the instructions on the main [README.md](../README.md), and install a brand new Laravel project using one of the following commands:
   - If you're using the composer docker container. by running `docker-compose run --rm composer create-project laravel/laravel`.
   - If you're using composer locally (outside of the docker container) use `curl -s https://laravel.build/example-app | bash`.
+
+*Remember to move your project files out of the Laravel folder and up into src.*
